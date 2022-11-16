@@ -97,3 +97,49 @@ article p {
     border-radius: 3px;
     text-decoration: none;
 }
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0px 60px 5px 60px;
+    border-top: 1px solid #919191;
+}
+
+footer h4 {
+    color: #919191;
+}
+
+footer ul {
+    padding-left: 0;
+    color: #919191;
+    list-style: none;
+}
+
+/* Mobile Support (Not recommanded) */
+/* #mobile-nav {
+    display: none;
+}
+
+#mobile-nav #myLinks {
+    display: none;
+  }
+
+@media screen and (max-width: 799px){
+    header {
+        display: none;
+    }
+    #mobile-nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 5px 60px 0px 60px;
+        overflow: hidden;
+        position: relative;
+    }
+    #mobile-nav a {
+        padding-top: 18px;
+    }
+} */
+
+/* Enf of Mobile Support */
