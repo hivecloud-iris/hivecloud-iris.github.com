@@ -1,5 +1,5 @@
 # Roadmap
 
 ## Todo:
-- [ ] remake some images
-- [ ] add more prodcuts and services
+- [x] remake some images
+- [x] add more prodcuts and services
