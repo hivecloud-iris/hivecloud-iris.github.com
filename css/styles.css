@@ -1,3 +1,5 @@
+/* Set the page to full screen size and font to roboto for all the website */
+
 body {
     margin: 0;
     padding: 0;
@@ -6,9 +8,13 @@ body {
     background-color: #313131;
 }
 
+/* Class used to color text in yellow */
+
 .yellow {
     color: #dfc30a;
 }
+
+/* Used for the navbar (top of the page) */
 
 header {
     display: flex;
@@ -46,6 +52,8 @@ header {
     text-decoration: none;
 }
 
+/* Articles are square shapped box in the middle of the website */
+
 article {
     margin: 50px 100px 0 100px;
     border: 2px solid #919191;
@@ -57,6 +65,23 @@ article {
 article p {
     padding: 0px 5em 0px 5em;
 }
+
+article #inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+article #inputs input {
+    padding: 5px;
+    margin: 10px;
+    height: 24px;
+    width: 200px;
+    background-color: #919191;
+    border: 1px solid #919191;
+    border-radius: 2px;
+}
+
+/* Used to align and set correctly products and services */
 
 .items {
     padding: 0 50px 0 50px;
@@ -83,13 +108,16 @@ article p {
     margin: 0;
 }
 
+/* Only used on the index.html */
+
 .buttons {
     display: flex;
     justify-content: center;
     padding: 10px 0 10px 0;
 }
 
-.yellow-button {
+
+.buttons a {
     margin: 0px 5px 0px 5px;
     padding: 0px 10px 0px 10px;
     background-color: #dfc30a;
@@ -97,6 +125,8 @@ article p {
     border-radius: 3px;
     text-decoration: none;
 }
+
+/* Bottom of the page */
 
 footer {
     display: flex;
@@ -120,6 +150,7 @@ footer a {
     font-size: large;
     color: #919191;
 }
+
 /* Mobile Support (Not recommanded) */
 /* #mobile-nav {
     display: none;
