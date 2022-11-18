@@ -71,7 +71,14 @@ article #inputs {
     flex-direction: column;
     align-items: center;
 }
+
+/* Color of text in input box */
+::placeholder {
+    color: #dfc30a;
+}
+
 article #inputs input {
+    color: #dfc30a;
     padding: 5px;
     margin: 10px;
     height: 24px;
@@ -108,7 +115,7 @@ article #inputs input {
     margin: 0;
 }
 
-/* Only used on the index.html */
+/* Buttons used in articles */
 
 .buttons {
     display: flex;
@@ -124,6 +131,7 @@ article #inputs input {
     border: 5px solid #dfc30a;
     border-radius: 3px;
     text-decoration: none;
+    color: #313131;
 }
 
 /* Bottom of the page */
@@ -132,7 +140,8 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    padding: 0px 60px 5px 60px;
+    padding: 0 60px 5px 60px;
+    margin-top: 35vh;
     border-top: 1px solid #919191;
 }
 
@@ -236,3 +245,11 @@ footer a {
 }
 
 /* Enf of Mobile Support */
+
+@media screen and (min-width: 890px){
+    footer {
+        /* position:sticky; */
+        /* bottom: 0px; */
+        /* position:fixed; */
+    }
+}
