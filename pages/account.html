@@ -33,22 +33,24 @@
             </ul>
         </div>
     </header>
-    <!-- <header id="mobile-nav">
+    <!-- Mobile Nav header -->
+    <header id="mobile-nav">
         <div id="logo">
-            <img src="./images/logo.png" alt="HiveCloud Logo">
+            <img src="../images/logo.png" alt="HiveCloud Logo">
         </div>
-        <div id="myLinks">
-            <ul>
-                <li><a href="#">Products</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Account</a></li>
-            </ul>
-        </div>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <a href="javascript:void(0);" class="icon yellow" onclick="myFunction()">
             <i class="fa fa-bars"></i>
         </a>
-    </header> -->
+    </header>
+    <!-- Mobile Nav list -->
+    <div id="mobile-nav-list">
+        <ul>
+            <li><a href="../pages/products.html">Products</a></li>
+            <li><a href="../pages/services.html">Services</a></li>
+            <li><a href="../pages/about.html">About</a></li>
+            <li><a href="../index.html">Home</a></li>
+        </ul>
+    </div>
     <main>
         <article>
             <h1 class="yellow">Login / Register</h1>
@@ -92,16 +94,18 @@
             </ul>
         </div>
     </footer>
-    <!-- <script>
+    <!-- JS script for mobile support (Not recommanded) -->
+    <script>
         function myFunction() {
-          var x = document.getElementById("myLinks");
+          var x = document.getElementById("mobile-nav-list");
           if (x.style.display === "block") {
             x.style.display = "none";
           } else {
             x.style.display = "block";
           }
         }
-        </script> JS script for mobile support (Not recommanded) -->
+    </script>
+    <!-- JS script for mobile support (Not recommanded) -->
 </body>
 
 </html>
