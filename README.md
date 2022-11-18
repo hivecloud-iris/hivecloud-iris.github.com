@@ -3,7 +3,7 @@
 ## Todo:
 - [x] remake some images
 - [x] add more prodcuts and services
-- [ ] add mobile support?
+- [x] add mobile support?
 - [x] add account and about pages
 - [x] host website
 - [ ] work on the french version?
