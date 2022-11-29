@@ -130,9 +130,11 @@ article #inputs input {
     height: 250px;
     width: 500px;
     text-align: center;
-    background-color: #606060;
 }
 
+.item .grey {
+    background-color: #606060;
+}
 .items img {
     width: auto;
     height: 70px;
