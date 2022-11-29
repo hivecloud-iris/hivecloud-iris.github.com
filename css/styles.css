@@ -17,11 +17,16 @@ body {
 /* Used for the navbar (top of the page) */
 
 header {
+    background-color: #313131;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding: 5px 60px 0px 60px;
     border-bottom: 1px solid #919191;
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    width: 100%;
 }
 
 #logo img {
@@ -29,7 +34,23 @@ header {
     height: 50px;
 }
 
+/* "function" in CSS */
+@keyframes rotate {
+    0% {
+      transform: rotate(0deg)
+    }
+    100% {
+      transform: rotate(360deg)
+    }
+  }
+
+#logo img:hover{
+    /* launch animation with 2sec duration for an infinite time */
+    animation: rotate 2s infinite;
+}
+
 #list ul {
+    padding-right: 100px;
     margin: 0;
     display: flex;
     flex-direction: row;
@@ -53,6 +74,10 @@ header {
 }
 
 /* Articles are square shapped box in the middle of the website */
+
+main {
+    margin-top: 100px;
+}
 
 article {
     margin: 50px 100px 0 100px;
@@ -99,6 +124,8 @@ article #inputs input {
 }
 
 .items div {
+    border: 3px solid #919191;
+    border-radius: 5px;
     margin: 0 10px 0 10px;
     height: 250px;
     width: 500px;
@@ -185,10 +212,30 @@ footer a {
     width: 100%;
 }
 
+@media screen and (min-width: 800px){
+
+#horizontal {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#horizontal article {
+    width: 30%;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+#horizontal article p {
+    padding: 0px 2em 0px 2em;
+}
+}
+
 @media screen and (max-width: 799px){
     /* Hide base navbar */
     header {
         display: none;
+        width: 80%;
     }
 
     /* Unveil mobile navbar */
