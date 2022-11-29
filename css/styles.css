@@ -123,13 +123,14 @@ article #inputs input {
     align-items: center;
 }
 
-.items div {
+.items .item {
     border: 3px solid #919191;
     border-radius: 5px;
     margin: 0 10px 0 10px;
     height: 250px;
     width: 500px;
     text-align: center;
+    background-color: #606060;
 }
 
 .items img {
@@ -299,4 +300,33 @@ footer a {
         /* bottom: 0px; */
         /* position:fixed; */
     }
+}
+
+
+
+/* Bon là c'est un peu compliqué */
+
+@keyframes glowing {
+    0% {
+      background-color: #f8e323;
+      box-shadow: 0 0 5px #f8e323;
+    }
+    50% {
+      background-color: #f8e323;
+      box-shadow: 0 0 20px #f8e323;
+    }
+    100% {
+      background-color: #f8e323;
+      box-shadow: 0 0 5px #f8e323;
+    }
+  }
+
+.items .item img:hover {
+    border-radius: 60px;
+    animation: glowing 5s infinite;
+}
+
+.abeille {
+    bottom: 50px;
+    position: relative;
 }
