@@ -329,6 +329,7 @@ footer a {
 }
 
 .abeille {
+    z-index: 0;
     bottom: 50px;
     position: relative;
 }
